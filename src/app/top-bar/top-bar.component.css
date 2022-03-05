@@ -1,7 +1,38 @@
+.style_top{
+    background: #fbecfb;
+    width: 100%;
+    height: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif ;
+}
+.menu-spacer {
+    flex: 1 1 auto;
+  }
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+h1{
+    color: aliceblue;
+}
+.icon{
+    color: #c396ff;
+}
+.style-nav{
+  background: #591D90;
+  width: 98%;
+  height: 65px;
+}
+.button-style {
+    background: #591D90;
+    color: white;
+  }
+  button:hover{
+    background: #4b126a;
+  }
+  .drop-style{
+    text-decoration:none;
+    background: #591D90;
+    color: white;
+  }
+  .images{
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 100px;
+    width: auto;
+}

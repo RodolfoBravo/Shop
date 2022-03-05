@@ -1,13 +1,66 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
-
-<button mat-button color="primary">My shop</button>
-
-<a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+<div class="row d-flex justify-content-between style_top">
+  <div class="col">
+    <a [routerLink]="['/']"> 
+      <img  class="images rounded-circle" src="../../assets/logo_v2.png">
+    </a>
+  </div> 
+  <form class="col d-flex align-items-center justify-content-center">
+    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+    <span>
+      <button class="btn btn-outline-success button-style rounded-pill" type="submit">
+        Search
+      </button>
+    </span>
+  </form>
+  <div class="col d-flex justify-content-end align-items-center">
+    <mat-icon routerLink="/cart" class="material-icons icon" >
+      person
+    </mat-icon>
+    <mat-icon routerLink="/cart" class="material-icons icon" matBadge="0" matBadgeColor="warn">
+      shopping_cart
+    </mat-icon>
+  </div>
+</div> 
+<div class="row justify-content-center align-items-center style_top">
+<div class="row row-cols-auto justify-content-center align-items-center style-nav rounded-pill">
+    <button class="col button-style">Inicio</button>
+    <span class="col">
+      <a class="drop-style" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        Papeleria
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Tarjetas</a></li>
+        <li><a class="dropdown-item" href="#">Etiquetas</a></li>
+        <li><a class="dropdown-item" href="#">Stickers</a></li>
+        <li><a class="dropdown-item" href="#">Volantes/Folletos </a></li>
+      </ul>
+  </span>
+  <button class="col button-style">Servicios</button>
+  <button class="col button-style">Nosotros</button>
+<button class="col button-style">Contacto</button>
+</div>
+</div>
+  <!--  <button mat-icon-button class="button fancy-button"><mat-icon (click)="sidenav.toggle()">menu</mat-icon><mat-icon >menu</mat-icon></button>-->
+   <!--
+    <span class="menu-spacer"></span>
+      <button class="button-style" mat-button>Inicio</button>
+      <li class="nav-item dropdown">
+        <a class="button-style" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Papeleria</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tarjetas</a></li>
+          <li><a class="dropdown-item" href="#">Etiquetas</a></li>
+          <li><a class="dropdown-item" href="#">Stickers</a></li>
+          <li><a class="dropdown-item" href="#">Volantes/Folletos </a></li>
+        </ul>
+      </li>
+      <button class="button-style" mat-button>Servicios</button>
+      <button class="button-style" mat-button>Nosotros</button>
+      <button class="button-style" mat-button>Contacto</button>
+    <span class="menu-spacer"></span>
+    <mat-icon routerLink="/cart" class="material-icons icon" >search</mat-icon>
+    <mat-icon routerLink="/cart" class="material-icons icon" >person</mat-icon>
+    <mat-icon routerLink="/cart" class="material-icons icon" matBadge="0" matBadgeColor="warn">favorite</mat-icon>
+    <mat-icon routerLink="/cart" class="material-icons icon" matBadge="0" matBadgeColor="warn">shopping_cart</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+</div>-->

@@ -5,15 +5,23 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatBadgeModule } from '@angular/material/badge';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
 
 @NgModule({
   imports: [
@@ -27,17 +35,26 @@ import { ButtonsComponent } from './buttons/buttons.component';
       { path: 'shipping',component: ShippingComponent},
     ]),
     BrowserAnimationsModule,
-    MatSliderModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatBadgeModule,
+    MdbCarouselModule,
+
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    TopBarComponent,
+    
   ],
   bootstrap: [
     AppComponent
