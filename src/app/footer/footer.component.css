@@ -1,0 +1,39 @@
+.style-footer{
+    background-image: url('../../assets/background_footer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+
+.ftco-footer-social{
+    list-style: none;
+    justify-content: left;
+}
+
+.footer-heading{
+    color: white;
+}
+
+.title{
+    color: #591D90;
+    text-transform: uppercase;
+}
+
+.list-footer{
+    text-decoration:none;
+    color: #6D0097;
+    font-size: 18px;
+}
+
+hr{
+    height: 3px;
+    background-color:white;
+  }
+
+  .style-pagos{
+    text-align: right;
+  }
+
+  .copyright{
+      color: #f0f0f0;
+      font-size: 18px;
+  }

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    background: #fbecfb;
+    font-family: 'Poppins', sans-serif
+}
+
+.card{
+    border: none;
+}
+.img-style:hover {
+    border: 1px solid #000;
+    box-shadow: 3px 3px 30px #8f66d6;
+}
+.row .card .card-body {
+    padding: 1rem 1.2rem;
+    background: #fbecfb;
+}
+
+ .row .card .card-body .card-img img {
+    object-fit: cover;
+    transform: translateY(50px);
+    transition: 0.5s;
+    border-radius: 50%;
+   
+}
+
+.row .card .card-body .testimonial {
+    transform: translateY(50px);
+    transition: 0.5s
+}
+
+.row .card .card-body .testimonial {
+    font-size: 0.9rem;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0
+}
+
+.row .card:hover .card-body .testimonial,
+.row .card:hover .card-body,
+.row .card:hover .card-body .card-img img {
+    transform: translateY(0px);
+    opacity: 1
+}
+
+@media(max-width: 991.5px) {
+    body::after {
+        clip-path: circle(40% at 10% 50%)
+    }
+
+    body::before {
+        clip-path: circle(50% at right -10%)
+    }
+}
+
+.style-global{
+background: #fbecfb;
+height: 75%;
+}

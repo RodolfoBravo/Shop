@@ -21,6 +21,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatBadgeModule } from '@angular/material/badge';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeroComponent } from './hero/hero.component';
+import { PagMainComponent } from './pag-main/pag-main.component';
+import { ProductCategoriesComponent } from './product-categories/product-categories.component';
+import { ProductListItemsComponent } from './product-list-items/product-list-items.component';
+import { LogoClientsComponent } from './logo-clients/logo-clients.component';
 
 
 @NgModule({
@@ -29,7 +36,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: PagMainComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart',component: CartComponent},
       { path: 'shipping',component: ShippingComponent},
@@ -43,6 +50,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     MatCardModule,
     MatBadgeModule,
     MdbCarouselModule,
+    FontAwesomeModule,
 
   ],
   declarations: [
@@ -54,6 +62,12 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     ShippingComponent,
     ButtonsComponent,
     TopBarComponent,
+    FooterComponent,
+    HeroComponent,
+    PagMainComponent,
+    ProductCategoriesComponent,
+    ProductListItemsComponent,
+    LogoClientsComponent,
     
   ],
   bootstrap: [

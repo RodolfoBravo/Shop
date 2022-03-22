@@ -1,11 +1,43 @@
-.example-card {
-    max-width: 400px;
-  }
+.style{
+  background: #fbecfb;
+}
+
+
+.carousel-control-prev-icon{
+  color: #591D90;
+}
+
+.style-card{
+  border-radius: 25px;
+   transition: transform .4s; /* Animation */
+   background: #eccbf7;
+}
+.style-card:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.button-style {
+  background: #8f66d6;
+  color: white;
+  width: auto;
+  font-size: 18px;
   
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+}
+.title{
+  color: #591D90;
+    text-transform: uppercase;
+}
+
+.style-img{
+  max-width: 90%;
+  max-height: 90%;
+  justify-content: center;
+  align-content: center;
+
+}
+.h5-title{
+  color: white;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

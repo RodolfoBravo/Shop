@@ -11,7 +11,9 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
-        }
+        },
+        "@schematics/angular:component": {
+          "style": "css" }
       },
       "root": "",
       "sourceRoot": "src",
@@ -35,7 +37,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },

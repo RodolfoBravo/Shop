@@ -1,9 +1,11 @@
 .style_top{
     background: #fbecfb;
-    width: 100%;
-    height: auto;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif ;
 }
+.style_sub{
+  background: #fbecfb;
+  height: auto;
+}
+
 .menu-spacer {
     flex: 1 1 auto;
   }
@@ -15,16 +17,34 @@ h1{
     color: #c396ff;
 }
 .style-nav{
-  background: #591D90;
-  width: 98%;
-  height: 65px;
+  background: #8f66d6;
+}
+.style-nav-button{
+  background: #8f66d6;
+  width: auto;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
 }
 .button-style {
-    background: #591D90;
+    background: #8f66d6;
     color: white;
+    width: 70px;
+    font-size: 18px;
+    
   }
+
+  .style-nav-button:hover{
+    background: #c396ff;
+  }
+
   button:hover{
-    background: #4b126a;
+    background: #c396ff;
+  }
+  .search{
+    width: auto;
+    height: 35px;
+    
   }
   .drop-style{
     text-decoration:none;
@@ -33,6 +53,10 @@ h1{
   }
   .images{
     /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 100px;
-    width: auto;
+    height: 90px;
+    width: 160px;
+    
+}
+.mat-icon {
+  font-size: 50px;
 }
